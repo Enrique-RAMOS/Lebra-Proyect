@@ -35,7 +35,20 @@ namespace Lebra.View
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            RegistroEmpleados frm2 = new RegistroEmpleados();
+            frm2.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+          
+            MostrarEmpleados frm1 = new MostrarEmpleados();
+            frm1.ShowDialog();
         }
     }
 }

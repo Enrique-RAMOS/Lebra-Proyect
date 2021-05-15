@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 475);
             this.Name = "RegistroEmpleados";
-            this.Text = "RegistroEmpleados";
+            this.Text = "Registro de los Empleados";
             this.ResumeLayout(false);
 
         }

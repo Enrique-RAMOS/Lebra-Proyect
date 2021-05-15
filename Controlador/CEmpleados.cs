@@ -3,36 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lebra.Entidades;
+using Lebra.Modelos;
 
 namespace Lebra.Controlador
 {
     class CEmpleados
     {
-        //MUsuarios mUsuarios = new MUsuarios();
+        MEmpleados mEmpleados = new MEmpleados();
 
 
-        //public void Insertar(Usuarios usuario)
-        //{
-        //    mUsuarios.Insertar(usuario);
-        //}
+        public void Insertar(Empleados empleados)
+        {
+            mEmpleados.Insertar(empleados);
+        }
 
-        //public void Actualizar(Usuarios usuario)
-        //{
-        //    mUsuarios.Actualizar(usuario);
-        //}
+        public void Actualizar(Empleados empleados)
+        {
+            mEmpleados.Actualizar(empleados);
+        }
 
-        //public void Eliminar(Usuarios usuario)
-        //{
-        //    mUsuarios.Eliminar(usuario);
-        //}
+        public void Eliminar(Empleados empleados)
+        {
+            mEmpleados.Eliminar(empleados);
+        }
 
-        //public List<Usuarios> ConsultarListado()
-        //{
-        //    return mUsuarios.ConsultarListado();
-        //}
+        public List<Empleados> ConsultarListado()
+        {
+            return mEmpleados.ConsultarListado();
+        }
         //public Usuarios ConsultarUna(int id)
         //{
-        //    return mUsuarios.ConsultarUna(id);
+        //    //    return mUsuarios.ConsultarUna(id);
+        //    //}
         //}
     }
 }

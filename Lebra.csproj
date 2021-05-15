@@ -99,6 +99,9 @@
     <Compile Include="View\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\MostrarEmpleados.resx">
+      <DependentUpon>MostrarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MostrarUsuarios.resx">
       <DependentUpon>MostrarUsuarios.cs</DependentUpon>
     </EmbeddedResource>

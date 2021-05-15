@@ -8,10 +8,10 @@ namespace Lebra.Entidades
 {
     class Empleados
     {
-        private int Nombres_Apellidos;
-        private int Telefono;
+        private string Nombres_Apellidos;
+        private double Telefono;
         private int Sueldo_dia;
-        public int nombres_Apellidos
+        public string nombres_Apellidos
         {
             get { return Nombres_Apellidos; }
             set { Nombres_Apellidos = value; }
@@ -19,7 +19,7 @@ namespace Lebra.Entidades
 
      
 
-        public int telefono
+        public double telefono
         {
             get { return Telefono; }
             set { Telefono = value; }
