@@ -16,5 +16,10 @@ namespace Lebra.View
         {
             InitializeComponent();
         }
+
+        private void MostrarEmpleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

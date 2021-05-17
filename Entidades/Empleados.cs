@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lebra.Entidades
 {
-    class Empleados
+   public class Empleados
     {
         private string Nombres_Apellidos;
         private double Telefono;
+        private int DUI;
         private int Sueldo_dia;
+
+
         public string nombres_Apellidos
         {
             get { return Nombres_Apellidos; }
@@ -25,7 +28,7 @@ namespace Lebra.Entidades
             set { Telefono = value; }
         }
 
-        private int DUI;
+        
 
         public int Dui
         {

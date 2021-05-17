@@ -10,13 +10,38 @@ namespace Lebra.Entidades
 
     {
 
-        public int IdUsuario { get; set; }
-        public string Nombre_Apellido { get; set; }
-        public string Usua { get; set; }
-        public string Password { get; set; }
+        public int IdUsuario;
+        private string Nombre_Apellido;
+        private string Usua;
+        private string Password;
+
+
+
+        public string nombre_Apellido
+        {
+            get { return Nombre_Apellido; }
+            set { Nombre_Apellido = value; }
+        }
 
        
-       
+        
+        public string usua
+        {
+            get { return Usua; }
+            set { Usua = value; }
+        }
+
+      
+        
+
+        public string password
+        {
+            get { return Password; }
+            set { Password = value; }
+        }
+
+
+
 
         public int idUsuario
         {

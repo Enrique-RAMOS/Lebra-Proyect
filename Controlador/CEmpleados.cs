@@ -8,16 +8,14 @@ using Lebra.Modelos;
 
 namespace Lebra.Controlador
 {
-    class CEmpleados
+    public class CEmpleados
     {
         MEmpleados mEmpleados = new MEmpleados();
-
 
         public void Insertar(Empleados empleados)
         {
             mEmpleados.Insertar(empleados);
         }
-
         public void Actualizar(Empleados empleados)
         {
             mEmpleados.Actualizar(empleados);
@@ -32,10 +30,5 @@ namespace Lebra.Controlador
         {
             return mEmpleados.ConsultarListado();
         }
-        //public Usuarios ConsultarUna(int id)
-        //{
-        //    //    return mUsuarios.ConsultarUna(id);
-        //    //}
-        //}
     }
 }

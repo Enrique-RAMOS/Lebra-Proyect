@@ -8,7 +8,6 @@ using Dapper;
 using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using Lebra.Controlador;
 
 namespace Lebra.Modelos
 {
@@ -43,7 +42,7 @@ namespace Lebra.Modelos
 
         public void Actualizar(Empleados empleados)
         {
-            string consulta = "Update Usuarios set Nombre_Apellido='" + empleados.nombres_Apellidos + "' where IdUsuario=" + empleados.idEmpleado;
+            string consulta = "Update Empleados set Nombre_Apellido='" + empleados.nombres_Apellidos + "' where IdEmpleados=" + empleados.idEmpleado;
             cn.Open();
             cn.Execute(consulta);
             cn.Close();
@@ -57,17 +56,19 @@ namespace Lebra.Modelos
             cn.Close();
         }
 
-        public List<Usuarios> ConsultarListado()
+        public List<Empleados> ConsultarListado()
         {
-            List<Usuarios> Usuarios = new List<Usuarios>();
+            List<Empleados> empleados = new List<Empleados>();
             string consulta = "Select * from Empleados";
             cn.Open();
-            Usuarios = cn.Query<Usuarios>(consulta).ToList();
+            empleados = cn.Query<Empleados>(consulta).ToList();
             cn.Close();
-            return Usuarios;
+            return empleados;
+
+
 
         }
-
+      
 
     }
 }

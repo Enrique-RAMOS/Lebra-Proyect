@@ -22,9 +22,9 @@ namespace Lebra.Modelos
                 string consulta = "IF EXISTS(SELECT Usua FROM Usuarios WHERE Usua=@Usua) RAISERROR('Ya existe un Usuario con esta ID', 16,1)" +
                                   "else Insert into Usuarios values(@Nombre_Apellido, @Usua, @Password)";
                 DynamicParameters parametros = new DynamicParameters();
-                parametros.Add("@Nombre_Apellido", usuarios.Nombre_Apellido, DbType.String);
-                parametros.Add("@Usua", usuarios.Usua, DbType.String);
-                parametros.Add("@Password", usuarios.Password, DbType.String);
+                parametros.Add("@Nombre_Apellido", usuarios.nombre_Apellido, DbType.String);
+                parametros.Add("@Usua", usuarios.usua, DbType.String);
+                parametros.Add("@Password", usuarios.password, DbType.String);
                 cn.Open();
                 cn.Execute(consulta, parametros, commandType: CommandType.Text);
                 cn.Close();
@@ -38,7 +38,7 @@ namespace Lebra.Modelos
 
         public void Actualizar(Usuarios usuarios)
         {
-            string consulta = "Update Usuarios set Nombre_Apellido='" + usuarios.Nombre_Apellido + "Usua ='" + usuarios.Usua + "' where IdUsuario=" + usuarios.idUsuario;
+            string consulta = "Update Usuarios set Nombre_Apellido='" + usuarios.nombre_Apellido +  "' where IdUsuario=" + usuarios.idUsuario;
             cn.Open();
             cn.Execute(consulta);
             cn.Close();

@@ -44,10 +44,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // usuariosBindingSource
-            // 
-            this.usuariosBindingSource.DataSource = typeof(Lebra.Entidades.Usuarios);
-            // 
             // nombre_ApellidoLabel
             // 
             nombre_ApellidoLabel.AutoSize = true;
@@ -57,14 +53,6 @@
             nombre_ApellidoLabel.Size = new System.Drawing.Size(87, 13);
             nombre_ApellidoLabel.TabIndex = 59;
             nombre_ApellidoLabel.Text = "Nombre Apellido:";
-            // 
-            // nombre_ApellidoTextBox
-            // 
-            this.nombre_ApellidoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Nombre_Apellido", true));
-            this.nombre_ApellidoTextBox.Location = new System.Drawing.Point(365, 141);
-            this.nombre_ApellidoTextBox.Name = "nombre_ApellidoTextBox";
-            this.nombre_ApellidoTextBox.Size = new System.Drawing.Size(237, 20);
-            this.nombre_ApellidoTextBox.TabIndex = 60;
             // 
             // passwordLabel
             // 
@@ -76,14 +64,6 @@
             passwordLabel.TabIndex = 61;
             passwordLabel.Text = "Password:";
             // 
-            // passwordTextBox
-            // 
-            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(365, 237);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(237, 20);
-            this.passwordTextBox.TabIndex = 62;
-            // 
             // usuaLabel
             // 
             usuaLabel.AutoSize = true;
@@ -93,6 +73,26 @@
             usuaLabel.Size = new System.Drawing.Size(43, 13);
             usuaLabel.TabIndex = 63;
             usuaLabel.Text = "Usuario";
+            // 
+            // usuariosBindingSource
+            // 
+            this.usuariosBindingSource.DataSource = typeof(Lebra.Entidades.Usuarios);
+            // 
+            // nombre_ApellidoTextBox
+            // 
+            this.nombre_ApellidoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Nombre_Apellido", true));
+            this.nombre_ApellidoTextBox.Location = new System.Drawing.Point(365, 141);
+            this.nombre_ApellidoTextBox.Name = "nombre_ApellidoTextBox";
+            this.nombre_ApellidoTextBox.Size = new System.Drawing.Size(237, 20);
+            this.nombre_ApellidoTextBox.TabIndex = 60;
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Password", true));
+            this.passwordTextBox.Location = new System.Drawing.Point(365, 237);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(237, 20);
+            this.passwordTextBox.TabIndex = 62;
             // 
             // usuaTextBox
             // 
@@ -110,7 +110,7 @@
             this.button2.TabIndex = 58;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
-           
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 

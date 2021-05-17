@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "MostrarEmpleados";
             this.Text = "Estado de los empleados";
+            this.Load += new System.EventHandler(this.MostrarEmpleados_Load);
             this.ResumeLayout(false);
 
         }
